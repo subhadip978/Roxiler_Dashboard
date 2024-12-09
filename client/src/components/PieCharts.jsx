@@ -27,7 +27,8 @@ const PieCharts = ({pieChartData}) => {
 	console.log(pieChartData);
 
   return(
-	<div className='w-[600px]  mt-20  p-5 m-4 border-2 rounded-lg border-[#384256] h-[600px] flex justify-center items-center '>
+	<div className='w-[800px]  mt-20  p-5 m-4 border-2 rounded-lg border-[#384256] h-[300px] flex justify-center items-center '>
+    <h1>PIECHART</h1>
 		
 		 <ResponsiveContainer width="100%" height="90%">
         <PieChart width={400} height={400}>
@@ -54,15 +55,15 @@ const PieCharts = ({pieChartData}) => {
       </ResponsiveContainer> 
 	  <div className="w-2/3 bg-slate-700">
         {pieChartData?.data?.map((item,index) => (
-          <div className="bg-slate-700 rounded-lg p-2" key={index}>
-            <div className=" flex justify-between space-y-2 rounded-lg">
+          <div className="bg-slate-700 rounded-lg p-2 w-full" key={index}>
+            <div className=" flex justify-between space-y-2 rounded-lg w-full">
 				
 
               <div className="w-[42px] h-10" style={{ backgroundColor: COLORS[index % COLORS.length] }} />
 				
 			 
 
-			 <div className='flex gap-2 p-1 justify-center items-center  w-full'>
+			 <div className='flex gap-2 p-1   w-full'>
 
               <span>{item.category}</span>
             <span>{item.count}</span>

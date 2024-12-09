@@ -1,12 +1,11 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../configure/db.js";
-// DataTypes
-// sequelize
+import { sequelize } from "../configure/db.js";
+
 export const Product = sequelize.define("Product", {
 	id: {
 	  type: DataTypes.INTEGER,
 	  primaryKey: true,
-	  autoIncrement: false, // IDs in your seed data are manually provided
+	  autoIncrement: false, 
 	},
 	title: {
 	  type: DataTypes.STRING,

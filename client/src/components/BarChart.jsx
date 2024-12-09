@@ -8,7 +8,7 @@ const BarCharts = ({barChartData}) => {
 	console.log(barChartData.data);
 
   return (
-	<div className='mt-20 h-2/2   w-[600px]  gap-40 border-2 border-[#384256] rounded-lg p-5 m-4'>
+	<div className='mt-20 h-[300px]  w-[600px]  gap-40 border-2 border-[#384256] rounded-lg p-5 m-4'>
 		<h4>
 		BarChart
 			</h4>

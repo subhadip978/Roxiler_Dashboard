@@ -33,16 +33,16 @@ console.log(statsTableData)
 
 <div className='flex gap-8 '>
 		<span className=''>Total sale</span>
-		<span>1000</span>
+		<span>{i.totalSaleAmount}</span>
 </div>
 <div  className='flex gap-8'>
 		<span>Total sold item</span>
-		<span>55</span>
+		<span>{i.totalSoldItems}</span>
 </div>
 <div className='flex gap-8'>
 
 		<span>Total not sold</span>
-		<span>15</span>
+		<span>{i.totalNotSoldItems}</span>
 </div>
 
 

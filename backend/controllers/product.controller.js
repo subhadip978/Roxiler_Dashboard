@@ -8,21 +8,12 @@ export const statistic=async(req,res)=>{
 	console.log(year);
 	console.log(month);
 
-
 	if (!year || !month) {
 		return res.status(400).json({ error: "Please provide year and month as query parameters." });
 	  }
 
 	
-	//   const d1 = new Date(`${year}-${month}-01T00:00:00.000Z`); 
-	//   const istOffset = 5.5 * 60 * 60 * 1000;  	
-	//   const formatDate=d1.toISOString().replace('Z', '+05:30')
-	//   const startDate=new Date(formatDate);	 
-	//   const d2 = new Date(startDate);
-    //   d2.setMonth(startDate.getMonth() + 1);
-	//   d2.setDate(0);
-	//   const endDate = d2.toISOString().replace('Z', '+05:30'); 
-	//   console.log(endDate);
+	
 
 	const stats = await Product.findAll({
 	 attributes: [
