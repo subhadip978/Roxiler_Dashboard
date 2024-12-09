@@ -1,0 +1,26 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #2a3447 ;
+	
+	color: white;
+
+	
+
+}
+input{
+	text-align: center;
+	
+}
+.homechild{
+	display:flex;
+	/* flex-wrap: wrap; */
+	 /* flex-direction: row;  */
+}
